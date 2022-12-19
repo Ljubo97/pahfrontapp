@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  
+  
+
+    let naziv = "Pocetna"
+    let naslov = "Dobrodosli na pocetnu Stranicu"
+
+</script>
+
+<h1>{naziv}</h1>
+<h3>{naslov}</h3>
