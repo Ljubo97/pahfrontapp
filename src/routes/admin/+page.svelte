@@ -20,11 +20,14 @@ name: "djordje", opis:"Sto ima props"
 
 input.value=value
     }
+    function prikazi(){
+      console.log(200)
+    }
   
 </script>
 
 
-<Korisnik name="Korisnik 1" opis="Ogranicene dozvole pristupa" />
+<Korisnik name="Korisnik 1" opis="Ogranicene dozvole pristupa" {prikazi}/>
 <Korisnik name="Korisnik 2" opis="Ogranicene dozvole pristupa" />
 <Korisnik {...kor} />
 

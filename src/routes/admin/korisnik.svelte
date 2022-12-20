@@ -1,6 +1,9 @@
 <script>
 export let name="Ime korisnika";
 export let opis ="Opis korisnika";
+export let prikazi=() => {};
+
+$: prikazi()
 </script>
 
 
