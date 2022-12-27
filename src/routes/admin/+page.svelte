@@ -24,11 +24,19 @@ input.value=value
       console.log(200)
     }
   
+
+    /**
+     * @param {any} KorisnikName
+     */
+    function imeKorisnika(KorisnikName) {
+    console.log("Korisnik: " , KorisnikName)
+
+ }
 </script>
 
 
-<Korisnik name="Korisnik 1" opis="Ogranicene dozvole pristupa" {prikazi}/>
-<Korisnik name="Korisnik 2" opis="Ogranicene dozvole pristupa" />
-<Korisnik {...kor} />
+<Korisnik {imeKorisnika} name="Korisnik 1" opis="Ogranicene dozvole pristupa" {prikazi}/>
+<Korisnik {imeKorisnika} name="Korisnik 2" opis="Ogranicene dozvole pristupa" />
+<Korisnik {imeKorisnika}  {...kor} />
 
-<Korisnik name={naziv} opis={naslov}/>
+<Korisnik name={naziv} opis={naslov} {imeKorisnika}/>
