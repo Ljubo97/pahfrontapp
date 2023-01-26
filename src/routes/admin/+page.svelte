@@ -21,7 +21,7 @@ name: "djordje", opis:"Sto ima props"
 input.value=value
     }
     function prikazi(){
-      console.log(200)
+      console.log("ispravno ucitan, status: "+200)
     }
   
 

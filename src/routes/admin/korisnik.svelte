@@ -1,13 +1,19 @@
 <script>
   import {createEventDispatcher} from 'svelte'
+    import { claim_element } from 'svelte/internal';
 export let name="Ime korisnika";
 export let opis ="Opis korisnika";
 export let prikazi=() => {};
+export let prikazI=() => {alert(name)};
+
 /**
      * @type {(arg0: string) => any}
      */
  export let imeKorisnika=() => {};;
 $: prikazi()
+
+
+
 </script>
 
 
@@ -17,7 +23,7 @@ $: prikazi()
     <div class="container">
       <h4>{name}</h4>
       <p>{opis}</p>
-      <button on:click={imeKorisnika(name)}>ime</button>
+      <button on:mouseenter|once={prikazI}  on:click|once={imeKorisnika(name) }>ime</button>
     </div>
   </div>
 
